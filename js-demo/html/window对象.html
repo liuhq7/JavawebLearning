@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window对象</title>
+</head>
+<body>
+
+</body>
+
+<script>
+
+      // 使用window对象的方法可以省略前面的window.
+      window.alert("abc");
+
+      // 点击是返回true，否则返回false
+      window.confirm("确认删除？");
+
+      // 在一定时间间隔后执行函数，只执行一次
+      window.setTimeout(function () {
+            alert("hehe");
+      }, 2000)
+
+      // 在一定时间间隔后执行函数，循环执行
+      window.setInterval(function () {
+            alert("hehe");
+      }, 2000)
+
+</script>
+
+</html>

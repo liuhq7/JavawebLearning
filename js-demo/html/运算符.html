@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>运算符</title>
+</head>
+<body>
+
+</body>
+
+<script>
+
+    var age1 = 20;
+    var age2 = "20";
+
+    // true
+    // "=="运算符先判断类型是否一样，不一样则进行类型转换再比较其值
+    alert(age1 == age2);
+
+    // false
+    // "==="运算符先判断类型是否一样，不一样则返回false
+    alert(age1 === age2);
+
+    /*
+    类型转换：
+        其他类型转为number：
+            string：按照字符串的字面值转为数字，如果字面值不是数字，则转为NaN
+            boolean：true转为1，false转为0
+        其他类型转为boolean：
+            number：0和NaN转为false，其他转为true
+            string：空字符串转为false，其他转为true
+            null：false
+            undefined：false
+    */
+    var str1 = "abc"
+    alert(parseInt(str1));
+    var str2 = "20"
+    alert(parseInt(str2));
+    var flag1 = true;
+    alert(+flag1);
+    var flag2 = false;
+    alert(+flag2);
+
+    var flag = 0;
+    // var flag = "string"
+    if (flag) {
+        alert("转为true")
+    }
+    else {
+        alert("转为false")
+    }
+
+</script>
+
+</html>

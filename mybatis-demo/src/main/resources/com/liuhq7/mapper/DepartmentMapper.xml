@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--Mapper接口和sql映射文件放置在同一目录下，resources下使用Dictionary和反斜杠创建Package层级-->
+<!--namespace：名称空间-->
+<!--namespace属性为Mapper接口全限定名-->
+<mapper namespace="com.liuhq7.mapper.DepartmentMapper">
+    <select id="selectAll" resultType="com.liuhq7.pojo.Department">
+        select * from dept;
+    </select>
+</mapper>
